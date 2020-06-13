@@ -9,7 +9,7 @@
                 </div>
                 <div class="card-body">
                     <p class="card-text">
-                        {!! nl2br(e(str_limit($post->body, 200))) !!}
+                        {{ $post->body, 200 }}
                     </p>
                 </div>
                 <div class="card-footer">
