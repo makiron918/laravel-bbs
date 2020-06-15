@@ -10,6 +10,11 @@
             <p class="mb-5">
                 {!! nl2br(e($post->body)) !!}
             </p>
+            <div class="mb-4 text-right">
+                <a class="btn btn-primary" href="{{ route('posts.edit', ['post' => $post]) }}">
+                    編集する
+                </a>
+            </div>
 
             <section>
                 <h2 class="h5 mb-4">
